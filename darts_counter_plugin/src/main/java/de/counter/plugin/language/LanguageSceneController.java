@@ -33,7 +33,6 @@ public class LanguageSceneController extends FxControlStylingService implements 
 	private Button button;
 	
 	public void showMenuScene(Event event) {
-		System.out.println(comboBox.getSelectionModel().getSelectedItem());
 		if(comboBox.getSelectionModel().getSelectedItem() == null) {
 			FxAlert.setAlert(AlertType.ERROR,"Please choose a language\n"
 											+ "-----------------------------\n"
