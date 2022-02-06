@@ -5,24 +5,37 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FAEBD7;" styleClass="tableStyle" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.counter.plugin.x01game.controller.X01StatisticsSceneController">
    <children>
-      <TableView fx:id="tableView" layoutX="22.0" layoutY="114.0" prefHeight="165.0" prefWidth="554.0" style="-fx-background-color: transparent;">
-        <columns>
-          <TableColumn fx:id="id" editable="false" prefWidth="110.0" style="-fx-background-color: #FAEBD7; -fx-border-color: black; -fx-border-width: 0px 3px 0px 3px;" text="PLAYER_ID" />
-          <TableColumn fx:id="name" editable="false" prefWidth="110.0" style="-fx-background-color: #FAEBD7; -fx-border-color: black; -fx-border-width: 0px 3px 0px 0px;" text="PLAYER_NAME" />
-            <TableColumn fx:id="restScore" editable="false" prefWidth="110.0" style="-fx-background-color: #FAEBD7; -fx-border-color: black; -fx-border-width: 0px 3px 0px 0px;" text="REST_SCORE" />
-            <TableColumn fx:id="avg" editable="false" prefWidth="110.0" style="-fx-background-color: #FAEBD7; -fx-border-color: black; -fx-border-width: 0px 3px 0px 0px;" text="AVARAGE" />
-            <TableColumn fx:id="thrownDarts" editable="false" prefWidth="110.0" style="-fx-background-color: #FAEBD7; -fx-border-color: black; -fx-border-width: 0px 3px 0px 0px;" text="THROWN_DARTS" />
-        </columns>
-      </TableView>
-      <Button layoutX="228.0" layoutY="293.0" mnemonicParsing="false" onAction="#showMenuScene" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="36.0" prefWidth="162.0" style="-fx-background-color: #A52A2A; -fx-border-color: black; -fx-border-width: 3px 3px 3px 3px; -fx-font-weight: bold; -fx-font-size: 25;" text="END" />
-      <Label layoutX="248.0" layoutY="44.0" style="-fx-font-weight: bold;" text="RESULTS">
-         <font>
-            <Font size="25.0" />
-         </font>
-      </Label>
+      <HBox alignment="CENTER" layoutX="199.0" layoutY="14.0" prefHeight="65.0" prefWidth="200.0" AnchorPane.leftAnchor="199.0" AnchorPane.rightAnchor="201.0">
+         <children>
+            <Label fx:id="statsHeader" style="-fx-font-weight: bold;" text="RESULT">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="32.0" layoutY="99.0" prefHeight="165.0" prefWidth="554.0" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="13.600000000000023" AnchorPane.topAnchor="99.0">
+         <children>
+            <TableView fx:id="tableView" prefHeight="165.0" prefWidth="554.0" style="-fx-background-color: transparent;">
+              <columns>
+                <TableColumn fx:id="id" editable="false" prefWidth="110.0" style="-fx-background-color: #FAEBD7; -fx-border-color: black; -fx-border-width: 0px 3px 0px 3px;" text="PLAYER_ID" />
+                <TableColumn fx:id="name" editable="false" prefWidth="110.0" style="-fx-background-color: #FAEBD7; -fx-border-color: black; -fx-border-width: 0px 3px 0px 0px;" text="PLAYER_NAME" />
+                  <TableColumn fx:id="restScore" editable="false" prefWidth="110.0" style="-fx-background-color: #FAEBD7; -fx-border-color: black; -fx-border-width: 0px 3px 0px 0px;" text="REST_SCORE" />
+                  <TableColumn fx:id="avg" editable="false" prefWidth="110.0" style="-fx-background-color: #FAEBD7; -fx-border-color: black; -fx-border-width: 0px 3px 0px 0px;" text="AVARAGE" />
+                  <TableColumn fx:id="thrownDarts" editable="false" prefWidth="110.0" style="-fx-background-color: #FAEBD7; -fx-border-color: black; -fx-border-width: 0px 3px 0px 0px;" text="THROWN_DARTS" />
+              </columns>
+            </TableView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="200.0" layoutY="265.0" prefHeight="100.0" prefWidth="200.0" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="265.0">
+         <children>
+            <Button fx:id="end" mnemonicParsing="false" onAction="#showMenuScene" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="36.0" prefWidth="162.0" style="-fx-background-color: #A52A2A; -fx-border-color: black; -fx-border-width: 3px 3px 3px 3px; -fx-font-weight: bold; -fx-font-size: 25;" text="END" />
+         </children>
+      </HBox>
    </children>
 </AnchorPane>

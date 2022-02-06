@@ -15,6 +15,9 @@ X01OverviewSceneController.scoreLabel=PUNKTE:
 X01GameSceneController.back=ZURÜCK
 X01GameSceneController.playerLabel=Spieler
 
+X01StatisticsSceneController.statsHeader=ERGEBNIS
+X01StatisticsSceneController.end=ENDE
+
 
 CricketPlayerSceneController.back=ZURÜCK
 CricketPlayerSceneController.playerHeader=WÄHLE SPIELER

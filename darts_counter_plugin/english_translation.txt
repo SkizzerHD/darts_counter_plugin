@@ -15,6 +15,9 @@ X01OverviewSceneController.scoreLabel=SCORE:
 X01GameSceneController.back=EXIT
 X01GameSceneController.playerLabel=Player
 
+X01StatisticsSceneController.statsHeader=RESULTS
+X01StatisticsSceneController.end=END
+
 
 CricketPlayerSceneController.back=BACK
 CricketPlayerSceneController.playerHeader=HOW MANY ARE YOU?
@@ -25,3 +28,4 @@ CricketOverviewSceneController.playerLabel=PLAYER:
 
 CricketGameSceneController.back=EXIT
 CricketGameSceneController.playerLabel=Player
+
