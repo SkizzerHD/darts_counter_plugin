@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FAEBD7;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.counter.plugin.cricket.controller.CricketGameSceneController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="90.0" prefWidth="600.0" style=": 0px 0px 3px 0px;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <children>
+                  <AnchorPane prefHeight="90.0" prefWidth="600.0" style="-fx-background-color: #FAEBD7; -fx-border-color: black; -fx-border-width: 0px 0px 3px 0px;">
+                     <children>
+                        <Label fx:id="playerLabel" layoutX="98.0" layoutY="21.0" style="-fx-font-size: 30;" text="PLAYER " />
+                        <HBox alignment="CENTER" layoutX="221.0" layoutY="10.0" prefHeight="70.0" prefWidth="369.0" spacing="20.0">
+                           <children>
+                              <Label fx:id="hit1" alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size: 30; -fx-font-weight: bold;" text="-" />
+                              <Label fx:id="hit2" alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size: 30; -fx-font-weight: bold;" text="-" />
+                              <Label fx:id="hit3" alignment="CENTER" contentDisplay="CENTER" style="-fx-font-size: 30; -fx-font-weight: bold;" text="-" />
+                           </children>
+                        </HBox>
+                        <Button fx:id="back" layoutX="14.0" layoutY="26.0" mnemonicParsing="false" onAction="#showMenu" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="35.0" prefWidth="70.0" style="-fx-background-color: #A52A2A; -fx-font-weight: bold; -fx-border-color: black; -fx-border-width: 3px 3px 3px 3px;" text="BACK" />
+                        <Label fx:id="player" layoutX="207.0" layoutY="22.0" style="-fx-font-size: 30;" text="1" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="310.0" prefWidth="600.0">
+               <children>
+                  <VBox prefHeight="310.0" prefWidth="300.0" style="-fx-background-color: grey;">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="44.28571428571429" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 0px 3px 3px 0px;">
+                           <children>
+                              <Label fx:id="label15" style="-fx-font-weight: bold;" textFill="WHITE">
+                                 <font>
+                                    <Font size="23.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="44.28571428571429" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 0px 3px 3px 0px;">
+                           <children>
+                              <Label fx:id="label16" style="-fx-font-weight: bold;" textFill="WHITE">
+                                 <font>
+                                    <Font size="23.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="55.0" prefHeight="44.28571428571429" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 0px 3px 3px 0px;">
+                           <children>
+                              <Label fx:id="label17" style="-fx-font-weight: bold;" textFill="WHITE">
+                                 <font>
+                                    <Font size="23.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="100.0" prefHeight="44.28571428571429" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 0px 3px 3px 0px;">
+                           <children>
+                              <Label fx:id="label18" style="-fx-font-weight: bold;" textFill="WHITE">
+                                 <font>
+                                    <Font size="23.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="144.0" prefHeight="44.28571428571429" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 0px 3px 3px 0px;">
+                           <children>
+                              <Label fx:id="label19" style="-fx-font-weight: bold;" textFill="WHITE">
+                                 <font>
+                                    <Font size="23.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="189.0" prefHeight="44.28571428571429" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 0px 3px 3px 0px;">
+                           <children>
+                              <Label fx:id="label20" style="-fx-font-weight: bold;" textFill="WHITE">
+                                 <font>
+                                    <Font size="23.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" layoutX="10.0" layoutY="234.0" prefHeight="44.28571428571429" prefWidth="200.0" style="-fx-border-color: black; -fx-border-width: 0px 3px 3px 0px;">
+                           <children>
+                              <Label fx:id="labelBull" style="-fx-font-weight: bold;" textFill="WHITE">
+                                 <font>
+                                    <Font size="23.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="310.0" prefWidth="100.0">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#setHit" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="44.28571428571429" prefWidth="100.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 3px 3px 0px; -fx-font-weight: bold;" text="15" />
+                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#setHit" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="44.28571428571429" prefWidth="100.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 3px 3px 0px; -fx-font-weight: bold;" text="16" />
+                        <Button layoutX="10.0" layoutY="55.0" mnemonicParsing="false" onAction="#setHit" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="44.28571428571429" prefWidth="100.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 3px 3px 0px; -fx-font-weight: bold;" text="17" />
+                        <Button layoutX="10.0" layoutY="100.0" mnemonicParsing="false" onAction="#setHit" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="44.28571428571429" prefWidth="100.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 3px 3px 0px; -fx-font-weight: bold;" text="18" />
+                        <Button layoutX="10.0" layoutY="144.0" mnemonicParsing="false" onAction="#setHit" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="44.28571428571429" prefWidth="100.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 3px 3px 0px; -fx-font-weight: bold;" text="19" />
+                        <Button layoutX="10.0" layoutY="189.0" mnemonicParsing="false" onAction="#setHit" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="44.28571428571429" prefWidth="100.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 3px 3px 0px; -fx-font-weight: bold;" text="20" />
+                        <Button layoutX="10.0" layoutY="234.0" mnemonicParsing="false" onAction="#setHit" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="44.28571428571429" prefWidth="100.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 3px 3px 0px; -fx-font-weight: bold;" text="BULL" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="310.0" prefWidth="100.0">
+                     <children>
+                        <Button fx:id="doubleButton" mnemonicParsing="false" onAction="#setStatus" prefHeight="155.0" prefWidth="100.0" style="-fx-background-color: #F08080; -fx-border-color: black; -fx-border-width: 0px 3px 3px 0px; -fx-font-weight: bold;" text="DOUBLE" />
+                        <Button fx:id="tripleButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#setStatus" prefHeight="155.0" prefWidth="100.0" style="-fx-background-color: #F08080; -fx-border-color: black; -fx-border-width: 0px 3px 3px 0px; -fx-font-weight: bold;" text="TRIPLE" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="310.0" prefWidth="100.0">
+                     <children>
+                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#reset" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="103.3333333333333" prefWidth="100.0" style="-fx-background-color: #A52A2A; -fx-border-color: black; -fx-border-width: 0px 3px 3px 0px; -fx-font-weight: bold; -fx-font-size: 25;" text="&lt;--" />
+                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#miss" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="103.3333333333333" prefWidth="100.0" style="-fx-background-color: #A52A2A; -fx-border-color: black; -fx-border-width: 0px 3px 3px 0px; -fx-font-weight: bold; -fx-font-size: 20;" text="MISS" />
+                        <Button fx:id="next" layoutX="10.0" layoutY="114.0" mnemonicParsing="false" onAction="#next" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="103.3333333333333" prefWidth="100.0" style="-fx-background-color: #FFA07A; -fx-border-color: black; -fx-border-width: 0px 3px 3px 0px; -fx-font-weight: bold; -fx-font-size: 20;" text="NEXT" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

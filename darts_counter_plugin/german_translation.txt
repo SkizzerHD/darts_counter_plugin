@@ -1,0 +1,27 @@
+
+MenuSceneController.menuHeader=WÄHLE SPIELMODUS
+
+X01SceneController.back=ZURÜCK
+X01SceneController.X01header=WÄHLE PUNKTE
+
+X01PlayerSceneController.back=ZURÜCK
+X01PlayerSceneController.playerHeader=WÄHLE SPIELER
+
+X01OverviewSceneController.back=ZURÜCK
+X01OverviewSceneController.overviewHeader=ÜBERBLICK
+X01OverviewSceneController.playerLabel=SPIELER:
+X01OverviewSceneController.scoreLabel=PUNKTE:
+
+X01GameSceneController.back=ZURÜCK
+X01GameSceneController.playerLabel=Spieler
+
+
+CricketPlayerSceneController.back=ZURÜCK
+CricketPlayerSceneController.playerHeader=WÄHLE SPIELER
+
+CricketOverviewSceneController.back=ZURÜCK
+CricketOverviewSceneController.overviewHeader=ÜBERBLICK
+CricketOverviewSceneController.playerLabel=SPIELER:
+
+CricketGameSceneController.back=ZURÜCK
+CricketGameSceneController.playerLabel=Spieler

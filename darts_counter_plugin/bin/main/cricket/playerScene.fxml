@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FAEBD7;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.counter.plugin.cricket.controller.CricketPlayerSceneController">
+   <children>
+      <Button fx:id="back" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#showMenuScene" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" style="-fx-background-color: #A52A2A; -fx-font-weight: bold; -fx-border-color: black; -fx-border-width: 3px 3px 3px 3px;" text="BACK" />
+      <HBox alignment="CENTER" layoutX="156.0" layoutY="14.0" prefHeight="74.0" prefWidth="287.0" AnchorPane.leftAnchor="156.0" AnchorPane.rightAnchor="156.8">
+         <children>
+            <Label fx:id="playerHeader" style="-fx-font-weight: bold;" text="HOW MANY YOU ARE ?">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="210.0" layoutY="88.0" prefHeight="260.0" prefWidth="180.0" AnchorPane.bottomAnchor="52.0" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="210.0" AnchorPane.topAnchor="88.0">
+         <children>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="260.0" prefWidth="180.0" style="-fx-background-color: transparent;" vbarPolicy="NEVER">
+               <content>
+                  <VBox alignment="TOP_CENTER" prefHeight="1000.0" prefWidth="180.0" spacing="10.0" style="-fx-background-color: #FAEBD7;">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#setPlayersAndShowGameScene" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #A52A2A; -fx-border-color: black; -fx-border-width: 3px 3px 3px 3px; -fx-font-weight: bold; -fx-font-size: 25; -fx-border-radius: 100; -fx-background-radius: 100;" text="1" />
+                        <Button mnemonicParsing="false" onAction="#setPlayersAndShowGameScene" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #A52A2A; -fx-border-color: black; -fx-border-width: 3px 3px 3px 3px; -fx-font-weight: bold; -fx-font-size: 25; -fx-border-radius: 100; -fx-background-radius: 100;" text="2" />
+                        <Button mnemonicParsing="false" onAction="#setPlayersAndShowGameScene" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #A52A2A; -fx-border-color: black; -fx-border-width: 3px 3px 3px 3px; -fx-font-weight: bold; -fx-font-size: 25; -fx-border-radius: 100; -fx-background-radius: 100;" text="3" />
+                        <Button mnemonicParsing="false" onAction="#setPlayersAndShowGameScene" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #A52A2A; -fx-border-color: black; -fx-border-width: 3px 3px 3px 3px; -fx-font-weight: bold; -fx-font-size: 25; -fx-border-radius: 100; -fx-background-radius: 100;" text="4" />
+                        <Button mnemonicParsing="false" onAction="#setPlayersAndShowGameScene" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #A52A2A; -fx-border-color: black; -fx-border-width: 3px 3px 3px 3px; -fx-font-weight: bold; -fx-font-size: 25; -fx-border-radius: 100; -fx-background-radius: 100;" text="5" />
+                        <Button mnemonicParsing="false" onAction="#setPlayersAndShowGameScene" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #A52A2A; -fx-border-color: black; -fx-border-width: 3px 3px 3px 3px; -fx-font-weight: bold; -fx-font-size: 25; -fx-border-radius: 100; -fx-background-radius: 100;" text="6" />
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

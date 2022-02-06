@@ -1,0 +1,27 @@
+
+MenuSceneController.menuHeader=CHOOSE A GAMEMODE
+
+X01SceneController.back=BACK
+X01SceneController.X01header=CHOOSE SCORE TO FINISH
+
+X01PlayerSceneController.back=BACK
+X01PlayerSceneController.playerHeader=HOW MANY ARE YOU?
+
+X01OverviewSceneController.back=BACK
+X01OverviewSceneController.overviewHeader=OVERVIEW
+X01OverviewSceneController.playerLabel=PLAYER:
+X01OverviewSceneController.scoreLabel=SCORE:
+
+X01GameSceneController.back=EXIT
+X01GameSceneController.playerLabel=Player
+
+
+CricketPlayerSceneController.back=BACK
+CricketPlayerSceneController.playerHeader=HOW MANY ARE YOU?
+
+CricketOverviewSceneController.back=BACK
+CricketOverviewSceneController.overviewHeader=OVERVIEW
+CricketOverviewSceneController.playerLabel=PLAYER:
+
+CricketGameSceneController.back=EXIT
+CricketGameSceneController.playerLabel=Player

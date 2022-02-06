@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FAEBD7;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.counter.plugin.menu.controller.MenuSceneController">
+   <children>
+      <HBox alignment="CENTER" layoutX="127.0" layoutY="3.0" prefHeight="72.0" prefWidth="345.0" AnchorPane.leftAnchor="127.0" AnchorPane.rightAnchor="127.39999999999998">
+         <children>
+            <Label fx:id="menuHeader" style="-fx-font-weight: bold;" text="CHOOSE YOUR GAME MODE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="140.0" layoutY="61.0" prefHeight="298.0" prefWidth="320.0">
+         <children>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="298.0" prefWidth="320.0" style="-fx-background-color: #FAEBD7;" vbarPolicy="NEVER">
+               <content>
+                  <VBox alignment="CENTER" prefHeight="550.0" prefWidth="320.0" spacing="10.0" style="-fx-background-color: #FAEBD7;">
+                     <children>
+                        <Button mnemonicParsing="false" onAction="#showX01Scene" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="260.0" prefWidth="260.0" style="-fx-background-color: #A52A2A; -fx-border-color: black; -fx-border-width: 3px 3px 3px 3px; -fx-font-weight: bold; -fx-font-size: 45; -fx-border-radius: 300; -fx-background-radius: 300;" text="X01" />
+                        <Button mnemonicParsing="false" onAction="#showPlayerScene" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="260.0" prefWidth="260.0" style="-fx-background-color: #A52A2A; -fx-border-color: black; -fx-border-width: 3px 3px 3px 3px; -fx-font-weight: bold; -fx-font-size: 45; -fx-border-radius: 300; -fx-background-radius: 300;" text="CRICKET" />
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </HBox>
+      <Button fx:id="setting" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#showLanguageScene" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="35.0" prefWidth="70.0" style="-fx-background-color: #A52A2A; -fx-font-weight: bold; -fx-border-color: black; -fx-border-width: 3px 3px 3px 3px;" />
+   </children>
+</AnchorPane>
