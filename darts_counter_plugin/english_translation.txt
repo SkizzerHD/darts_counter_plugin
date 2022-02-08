@@ -29,3 +29,6 @@ CricketOverviewSceneController.playerLabel=PLAYER:
 CricketGameSceneController.back=EXIT
 CricketGameSceneController.playerLabel=Player
 
+CricketGameObject.l1=Player
+CricketGameObject.l2=won
+

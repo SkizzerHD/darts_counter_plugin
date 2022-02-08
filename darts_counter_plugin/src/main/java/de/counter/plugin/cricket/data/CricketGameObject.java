@@ -2,15 +2,16 @@ package de.counter.plugin.cricket.data;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import de.counter.plugin.launch.GameObject;
 import de.counter.plugin.menu.controller.MenuSceneController;
-import de.fx.spring.customisation.FxAlert;
+import de.fx.spring.customisation.FxInformationScene;
+import de.fx.spring.customisation.InfoType;
+import de.fx.spring.resources.FXRManager;
 import de.fx.spring.resources.FxSceneMover;
 import javafx.event.Event;
-import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.Label;
 import lombok.Data;
 
 @Data
@@ -21,9 +22,9 @@ public class CricketGameObject implements GameObject{
 	
 	private List<CricketPlayer>players;
 	
+	
 	@Autowired
 	private FxSceneMover sceneMover;
-
 	
 	public void fillPlayerList(int amountPlayers) {
 		players = new ArrayList<>();
@@ -41,8 +42,15 @@ public class CricketGameObject implements GameObject{
 			}
 		}
 		if(numbersFinished == 7) {
-			FxAlert.setAlert(AlertType.INFORMATION,player.getName()+" won");
+			Label l1 = new Label();
+			Label l2 = new Label();
+			l1.setId("l1");
+			l2.setId("l2");
+			FXRManager.translateComponents(getClass(), l1,l2);
+			Label infoLabel = new Label(l1.getText()+" "+Integer.toString(player.getId())+" "+l2.getText());
 			sceneMover.moveToScene(event, MenuSceneController.class);
+			new FxInformationScene(InfoType.INFORMATION, infoLabel).
+					setRootStyle("-fx-background-color:#FAEBD7");
 		}
 		return null;
 	}

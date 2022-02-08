@@ -28,3 +28,6 @@ CricketOverviewSceneController.playerLabel=SPIELER:
 
 CricketGameSceneController.back=ZURÜCK
 CricketGameSceneController.playerLabel=Spieler
+
+CricketGameObject.l1=Spieler
+CricketGameObject.l2=hat gewonnen

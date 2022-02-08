@@ -2,12 +2,12 @@ package de.counter.plugin.language;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import de.counter.plugin.menu.controller.MenuSceneController;
-import de.fx.spring.customisation.FxAlert;
 import de.fx.spring.customisation.FxControlStylingService;
+import de.fx.spring.customisation.FxInformationScene;
+import de.fx.spring.customisation.InfoType;
 import de.fx.spring.resources.FXRManager;
 import de.fx.spring.resources.FxSceneMover;
 import javafx.collections.FXCollections;
@@ -17,7 +17,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
-import javafx.scene.control.Alert.AlertType;
+import javafx.scene.control.Label;
 import net.rgielen.fxweaver.core.FxmlView;
 
 @Component
@@ -34,9 +34,12 @@ public class LanguageSceneController extends FxControlStylingService implements 
 	
 	public void showMenuScene(Event event) {
 		if(comboBox.getSelectionModel().getSelectedItem() == null) {
-			FxAlert.setAlert(AlertType.ERROR,"Please choose a language\n"
-											+ "-----------------------------\n"
-											+ "Bitte wähle eine Sprache");
+			Label l = new Label("Please choose a language\n"
+								+ "-----------------------------\n"
+								+ "Bitte wähle eine Sprache");
+			l.setStyle("-fx-font-weight:bold");
+			new FxInformationScene(InfoType.ERROR, l).
+					setRootStyle("-fx-background-color:#FAEBD7");
 		}else {
 			if(comboBox.getSelectionModel().getSelectedItem().equals(Language.ENGLISH)) {
 				FXRManager.setTranslationFile("english_translation.txt");
@@ -50,7 +53,7 @@ public class LanguageSceneController extends FxControlStylingService implements 
 	@Override
 	public void setHoveringStyle() {
 		setControlObject(button);
-		setStyle(";-fx-background-color: #FFFAF0");
+		setStyle("-fx-background-color: #FFFAF0");
 	}
 
 	@Override

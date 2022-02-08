@@ -1,17 +1,15 @@
 package de.counter.plugin.menu.controller;
 
-
 import java.net.URL;
 import java.util.ResourceBundle;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import de.counter.plugin.cricket.controller.CricketPlayerSceneController;
 import de.counter.plugin.language.LanguageSceneController;
 import de.counter.plugin.x01game.controller.X01SceneController;
-
-import de.fx.spring.customisation.FxAlert;
 import de.fx.spring.customisation.FxControlStylingService;
+import de.fx.spring.customisation.FxInformationScene;
+import de.fx.spring.customisation.InfoType;
 import de.fx.spring.resources.FXRManager;
 import de.fx.spring.resources.FxSceneMover;
 import javafx.event.Event;
@@ -21,8 +19,6 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-
-import javafx.scene.control.Alert.AlertType;
 import net.rgielen.fxweaver.core.FxmlView;
 
 @Component
@@ -54,7 +50,9 @@ public class MenuSceneController extends FxControlStylingService implements Init
 	}
 
 	public void showComingSoonAlert() {
-		FxAlert.setAlert(AlertType.INFORMATION, "This Mode coming soon!!!");
+		Label l = new Label("This Mode coming soon...");
+		l.setStyle("-fx-font-weight: bold");
+		new FxInformationScene(InfoType.INFORMATION,l);
 	}
 
 	@Override
