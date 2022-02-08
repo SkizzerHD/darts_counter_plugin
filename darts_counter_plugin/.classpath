@@ -35,5 +35,7 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/lombok"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/spring_framework"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/javafx_spring_framework"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/java_fx_spring_framework"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFX"/>
 	<classpathentry kind="output" path="bin/default"/>
 </classpath>
