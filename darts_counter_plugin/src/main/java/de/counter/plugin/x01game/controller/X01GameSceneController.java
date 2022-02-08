@@ -80,7 +80,7 @@ public class X01GameSceneController extends FxControlStylingService implements I
 			deactivateControlObject(event);
 			button = (Button)event.getSource();
 
-			if(button.getText().equals("DOUBLE")) {
+			if(button.getId().equals("doubleButton")) {
 				if(status != X01Status.DOUBLE) {
 					status = X01Status.DOUBLE;
 					activateControlObject(event);
@@ -94,7 +94,7 @@ public class X01GameSceneController extends FxControlStylingService implements I
 					statD.setText("Click to activate");
 				}
 
-			}else if(button.getText().equals("TRIPLE")) {
+			}else if(button.getId().equals("tripleButton")) {
 				if(status != X01Status.TRIPLE) {
 					status = X01Status.TRIPLE;
 					activateControlObject(event);
