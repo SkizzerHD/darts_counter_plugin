@@ -122,8 +122,11 @@
                   <VBox prefHeight="310.0" prefWidth="100.0">
                      <children>
                         <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#reset" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="103.3333333333333" prefWidth="100.0" style="-fx-background-color: #A52A2A; -fx-border-color: black; -fx-border-width: 0px 3px 3px 0px; -fx-font-weight: bold; -fx-font-size: 25;" text="&lt;--" />
-                        <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#miss" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="103.3333333333333" prefWidth="100.0" style="-fx-background-color: #A52A2A; -fx-border-color: black; -fx-border-width: 0px 3px 3px 0px; -fx-font-weight: bold; -fx-font-size: 20;" text="MISS" />
-                        <Button fx:id="next" layoutX="10.0" layoutY="114.0" mnemonicParsing="false" onAction="#next" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="103.3333333333333" prefWidth="100.0" style="-fx-background-color: #FFA07A; -fx-border-color: black; -fx-border-width: 0px 3px 3px 0px; -fx-font-weight: bold; -fx-font-size: 20;" text="NEXT" />
+                        <Button fx:id="miss" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#miss" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="103.3333333333333" prefWidth="100.0" style="-fx-background-color: #A52A2A; -fx-border-color: black; -fx-border-width: 0px 3px 3px 0px; -fx-font-weight: bold; -fx-font-size: 14;" text="VORBEI" />
+                        <Button fx:id="next" layoutX="10.0" layoutY="114.0" mnemonicParsing="false" onAction="#next" prefHeight="103.3333333333333" prefWidth="100.0" style="-fx-background-color: #FFA07A; -fx-border-color: black; -fx-border-width: 0px 3px 3px 0px; -fx-font-weight: bold; -fx-font-size: 14;" text="NÄCHSTER">
+                           <font>
+                              <Font size="1.0" />
+                           </font></Button>
                      </children>
                   </VBox>
                </children>

@@ -280,7 +280,7 @@ public class X01GameSceneController extends FxControlStylingService implements I
 		if(gameObject.isDoubleOut()) {
 			doubleOutLabel.setText("YES");
 		}
-		FXRManager.translateComponents(this.getClass(), back,playerLabel);
+		FXRManager.translateComponents(this.getClass(), back,playerLabel,doubleButton,tripleButton,next);
 	}
 
 	@Override

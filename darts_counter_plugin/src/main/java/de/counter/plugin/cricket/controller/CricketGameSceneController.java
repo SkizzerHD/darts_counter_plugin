@@ -58,6 +58,8 @@ public class CricketGameSceneController extends FxControlStylingService implemen
 	private Button tripleButton = new Button();
 	@FXML
 	private Button next = new Button();
+	@FXML
+	private Button miss = new Button();
 
 	private Label[] hitLabels;
 
@@ -87,7 +89,7 @@ public class CricketGameSceneController extends FxControlStylingService implemen
 		if(hits < 3) {
 			deactivateControlObject(event);
 			button = (Button)event.getSource();
-			if(button.getText().equals("DOUBLE")) {
+			if(button.getId().equals("doubleButton")) {
 				if(status != CricketStatus.DOUBLE) {
 					status = CricketStatus.DOUBLE;
 					activateControlObject(event);
@@ -100,7 +102,7 @@ public class CricketGameSceneController extends FxControlStylingService implemen
 					//For Tooltip
 					statD.setText("Click to activate");
 				}
-			}else if(button.getText().equals("TRIPLE")) {
+			}else if(button.getId().equals("tripleButton")) {
 				if(status != CricketStatus.TRIPLE) {
 					status = CricketStatus.TRIPLE;
 					activateControlObject(event);
@@ -309,13 +311,13 @@ public class CricketGameSceneController extends FxControlStylingService implemen
 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
-		FXRManager.translateComponents(getClass(), back,playerLabel);
 		hitLabels = new Label[] {label15,label16,label17,label18,label19,label20,labelBull};
 		hits = 0;
 		status = CricketStatus.SINGLE;
 		doubleButton.setTooltip(statD);
 		tripleButton.setTooltip(statT);
 		setPlayerStats();
+		FXRManager.translateComponents(getClass(), back,playerLabel,next,miss,doubleButton,tripleButton);
 	}
 
 	@Override
@@ -327,6 +329,6 @@ public class CricketGameSceneController extends FxControlStylingService implemen
 	@Override
 	public void setControlActiveStyle() {
 		setControlObject(button);
-		setStyle(";-fx-background-color: #7FFF00");
+		setStyle("-fx-background-color: #7FFF00");
 	}
 }

@@ -6,6 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #FAEBD7;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.counter.plugin.x01game.controller.X01GameSceneController">
    <children>
@@ -65,7 +66,10 @@
                               <Button layoutX="98.0" layoutY="10.0" mnemonicParsing="false" onAction="#setScore" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="77.5" prefWidth="88.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 3px 3px 0px; -fx-font-size: 25; -fx-font-weight: bold;" text="8" />
                               <Button layoutX="186.0" layoutY="10.0" mnemonicParsing="false" onAction="#setScore" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="77.5" prefWidth="88.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 3px 3px 0px; -fx-font-size: 25; -fx-font-weight: bold;" text="9" />
                               <Button layoutX="274.0" layoutY="10.0" mnemonicParsing="false" onAction="#setScore" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="77.5" prefWidth="88.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 3px 0px; -fx-font-size: 25; -fx-font-weight: bold;" text="10" />
-                              <Button fx:id="doubleButton" mnemonicParsing="false" onAction="#setStatus" prefHeight="77.5" prefWidth="80.0" style="-fx-background-color: #F08080; -fx-border-color: black; -fx-border-width: 0px 3px 3px 3px; -fx-font-weight: bold;" text="DOUBLE" />
+                              <Button fx:id="doubleButton" mnemonicParsing="false" onAction="#setStatus" prefHeight="77.5" prefWidth="80.0" style="-fx-background-color: #F08080; -fx-border-color: black; -fx-border-width: 0px 3px 3px 3px; -fx-font-weight: bold;" text="DOUBLE">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font></Button>
                            </children>
                         </HBox>
                         <HBox alignment="CENTER" layoutX="10.0" layoutY="88.0" prefHeight="77.5" prefWidth="440.0">
@@ -75,7 +79,10 @@
                               <Button layoutX="98.0" layoutY="10.0" mnemonicParsing="false" onAction="#setScore" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="77.5" prefWidth="88.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 3px 3px 0px; -fx-font-size: 25; -fx-font-weight: bold;" text="13" />
                               <Button layoutX="186.0" layoutY="10.0" mnemonicParsing="false" onAction="#setScore" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="77.5" prefWidth="88.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 3px 3px 0px; -fx-font-size: 25; -fx-font-weight: bold;" text="14" />
                               <Button layoutX="274.0" layoutY="10.0" mnemonicParsing="false" onAction="#setScore" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="77.5" prefWidth="88.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 3px 0px; -fx-font-size: 25; -fx-font-weight: bold;" text="15" />
-                              <Button fx:id="tripleButton" mnemonicParsing="false" onAction="#setStatus" prefHeight="77.5" prefWidth="80.0" style="-fx-background-color: #F08080; -fx-border-color: black; -fx-border-width: 0px 3px 3px 3px; -fx-font-weight: bold;" text="TRIPLE" />
+                              <Button fx:id="tripleButton" mnemonicParsing="false" onAction="#setStatus" prefHeight="77.5" prefWidth="80.0" style="-fx-background-color: #F08080; -fx-border-color: black; -fx-border-width: 0px 3px 3px 3px; -fx-font-weight: bold;" text="TRIPLE">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font></Button>
                            </children>
                         </HBox>
                         <HBox alignment="CENTER" layoutX="10.0" layoutY="165.0" prefHeight="77.5" prefWidth="440.0">
@@ -85,7 +92,10 @@
                               <Button layoutX="98.0" layoutY="10.0" mnemonicParsing="false" onAction="#setScore" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="77.5" prefWidth="88.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 3px 3px 0px; -fx-font-size: 25; -fx-font-weight: bold;" text="18" />
                               <Button layoutX="186.0" layoutY="10.0" mnemonicParsing="false" onAction="#setScore" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="77.5" prefWidth="88.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 3px 3px 0px; -fx-font-size: 25; -fx-font-weight: bold;" text="19" />
                               <Button layoutX="274.0" layoutY="10.0" mnemonicParsing="false" onAction="#setScore" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="77.5" prefWidth="88.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-width: 0px 0px 3px 0px; -fx-font-size: 25; -fx-font-weight: bold;" text="20" />
-                              <Button fx:id="next" mnemonicParsing="false" onAction="#next" prefHeight="77.0" prefWidth="80.0" style="-fx-background-color: #FFA07A; -fx-border-color: black; -fx-border-width: 0px 3px 3px 3px; -fx-font-weight: bold;" text="NEXT" />
+                              <Button fx:id="next" mnemonicParsing="false" onAction="#next" prefHeight="77.0" prefWidth="80.0" style="-fx-background-color: #FFA07A; -fx-border-color: black; -fx-border-width: 0px 3px 3px 3px; -fx-font-weight: bold;" text="NÄCHSTER">
+                                 <font>
+                                    <Font size="11.0" />
+                                 </font></Button>
                            </children>
                         </HBox>
                      </children>

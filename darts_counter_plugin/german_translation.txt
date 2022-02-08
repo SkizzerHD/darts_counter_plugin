@@ -14,10 +14,12 @@ X01OverviewSceneController.scoreLabel=PUNKTE:
 
 X01GameSceneController.back=ZURÜCK
 X01GameSceneController.playerLabel=Spieler
+X01GameSceneController.doubleButton=DOPPEL
+X01GameSceneController.tripleButton=TRIPEL
+X01GameSceneController.next=NÄCHSTER
 
 X01StatisticsSceneController.statsHeader=ERGEBNIS
 X01StatisticsSceneController.end=ENDE
-
 
 CricketPlayerSceneController.back=ZURÜCK
 CricketPlayerSceneController.playerHeader=WÄHLE SPIELER
@@ -28,6 +30,11 @@ CricketOverviewSceneController.playerLabel=SPIELER:
 
 CricketGameSceneController.back=ZURÜCK
 CricketGameSceneController.playerLabel=Spieler
+CricketGameSceneController.next=NÄCHSTER
+CricketGameSceneController.miss=VORBEI
+CricketGameSceneController.doubleButton=DOPPEL
+CricketGameSceneController.tripleButton=TRIPEL
+
 
 CricketGameObject.l1=Spieler
 CricketGameObject.l2=hat gewonnen
