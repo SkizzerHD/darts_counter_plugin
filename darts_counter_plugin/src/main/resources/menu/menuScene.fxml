@@ -19,11 +19,11 @@
             </Label>
          </children>
       </HBox>
-      <HBox alignment="CENTER" layoutX="140.0" layoutY="61.0" prefHeight="298.0" prefWidth="320.0">
+      <HBox alignment="CENTER" layoutX="140.0" layoutY="61.0" prefHeight="298.0" prefWidth="320.0" style="-fx-background-color: #FAEBD7;" AnchorPane.leftAnchor="140.0" AnchorPane.rightAnchor="140.0">
          <children>
-            <ScrollPane hbarPolicy="NEVER" prefHeight="298.0" prefWidth="320.0" style="-fx-background-color: #FAEBD7;" vbarPolicy="NEVER">
+            <ScrollPane hbarPolicy="NEVER" prefHeight="550.0" prefWidth="320.0" style="-fx-background-color: #FAEBD7;" vbarPolicy="NEVER">
                <content>
-                  <VBox alignment="CENTER" prefHeight="550.0" prefWidth="320.0" spacing="10.0" style="-fx-background-color: #FAEBD7;">
+                  <VBox alignment="CENTER" blendMode="SRC_ATOP" fillWidth="false" prefHeight="550.0" prefWidth="320.0" spacing="10.0" style="-fx-background-color: #FAEBD7;">
                      <children>
                         <Button mnemonicParsing="false" onAction="#showX01Scene" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="260.0" prefWidth="260.0" style="-fx-background-color: #A52A2A; -fx-border-color: black; -fx-border-width: 3px 3px 3px 3px; -fx-font-weight: bold; -fx-font-size: 45; -fx-border-radius: 300; -fx-background-radius: 300;" text="X01" />
                         <Button mnemonicParsing="false" onAction="#showPlayerScene" onMouseEntered="#hovering" onMouseExited="#hoveringEnded" prefHeight="260.0" prefWidth="260.0" style="-fx-background-color: #A52A2A; -fx-border-color: black; -fx-border-width: 3px 3px 3px 3px; -fx-font-weight: bold; -fx-font-size: 45; -fx-border-radius: 300; -fx-background-radius: 300;" text="CRICKET" />
