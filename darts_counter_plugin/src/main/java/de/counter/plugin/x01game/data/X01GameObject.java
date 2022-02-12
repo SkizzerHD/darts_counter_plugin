@@ -3,7 +3,8 @@ package de.counter.plugin.x01game.data;
 import java.util.ArrayList;
 import java.util.List;
 import org.springframework.stereotype.Component;
-import de.counter.plugin.launch.GameObject;
+
+import de.counter.plugin.data.GameObject;
 import javafx.event.Event;
 import lombok.Data;
 

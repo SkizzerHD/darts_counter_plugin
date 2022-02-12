@@ -23,30 +23,31 @@ import net.rgielen.fxweaver.core.FxmlView;
 @Component
 @FxmlView("/language/languageScene.fxml")
 public class LanguageSceneController extends FxControlStylingService implements Initializable  {
-	
+
 	@FXML
 	private ComboBox<Language> comboBox = new ComboBox<>();
-	
+
 	@Autowired
 	private FxSceneMover sceneMover;
-	
+
 	private Button button;
-	
+
 	public void showMenuScene(Event event) {
 		if(comboBox.getSelectionModel().getSelectedItem() == null) {
 			Label l = new Label("Please choose a language\n"
-								+ "-----------------------------\n"
-								+ "Bitte wähle eine Sprache");
+							  + "-----------------------------\n"
+							  + "Bitte wähle eine Sprache");
 			l.setStyle("-fx-font-weight:bold");
 			new FxInformationScene(InfoType.ERROR, l).
-					setRootStyle("-fx-background-color:#FAEBD7");
+			setRootStyle("-fx-background-color:#FAEBD7");
 		}else {
-			if(comboBox.getSelectionModel().getSelectedItem().equals(Language.ENGLISH)) {
-				FXRManager.setTranslationFile("english_translation.txt");
-			}else if(comboBox.getSelectionModel().getSelectedItem().equals(Language.GERMAN)) {
-				FXRManager.setTranslationFile("german_translation.txt");
-			}
-			sceneMover.moveToScene(event, MenuSceneController.class);
+
+				if(comboBox.getSelectionModel().getSelectedItem().equals(Language.ENGLISH)) {
+					FXRManager.setTranslationFile("english_translation.txt");
+				}else if(comboBox.getSelectionModel().getSelectedItem().equals(Language.GERMAN)) {
+					FXRManager.setTranslationFile("german_translation.txt");
+				}
+				sceneMover.moveToScene(event, MenuSceneController.class);
 		}
 	}
 

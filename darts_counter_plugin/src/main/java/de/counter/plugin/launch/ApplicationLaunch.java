@@ -12,7 +12,7 @@ import de.fx.spring.resources.FXRManager;
 @ComponentScan(basePackages = {"de.counter.plugin.menu.controller",
 "de.counter.plugin.game","de.counter.plugin.x01game.controller",
 "de.counter.plugin.x01game.data","de.counter.plugin.cricket.controller",
-"de.counter.plugin.cricket.data","de.counter.plugin.language"})
+"de.counter.plugin.cricket.data","de.counter.plugin.language","de.counter.plugin.data"})
 public class ApplicationLaunch extends JavaFxApplicationLauncher {
 	
 	public static void main(String[] args)  {

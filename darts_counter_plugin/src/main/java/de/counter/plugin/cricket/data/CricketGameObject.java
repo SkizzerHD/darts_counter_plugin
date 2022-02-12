@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import de.counter.plugin.launch.GameObject;
+
+import de.counter.plugin.data.GameObject;
 import de.counter.plugin.menu.controller.MenuSceneController;
 import de.fx.spring.customisation.FxInformationScene;
 import de.fx.spring.customisation.InfoType;

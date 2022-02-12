@@ -1,4 +1,4 @@
-package de.counter.plugin.launch;
+package de.counter.plugin.data;
 
 import javafx.event.Event;
 
