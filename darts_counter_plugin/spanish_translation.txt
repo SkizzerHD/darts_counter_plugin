@@ -37,4 +37,4 @@ CricketGameSceneController.tripleButton=TRIPLE
 
 
 CricketGameObject.l1=Jugador
-CricketGameObject.l2=hat ganado
+CricketGameObject.l2=ganado
