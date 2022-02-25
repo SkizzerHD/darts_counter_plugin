@@ -46,6 +46,8 @@ public class LanguageSceneController extends FxControlStylingService implements 
 					FXRManager.setTranslationFile("english_translation.txt");
 				}else if(comboBox.getSelectionModel().getSelectedItem().equals(Language.GERMAN)) {
 					FXRManager.setTranslationFile("german_translation.txt");
+				}else if(comboBox.getSelectionModel().getSelectedItem().equals(Language.SPANISH)) {
+					FXRManager.setTranslationFile("spanish_translation.txt");
 				}
 				sceneMover.moveToScene(event, MenuSceneController.class);
 		}
@@ -65,7 +67,7 @@ public class LanguageSceneController extends FxControlStylingService implements 
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
 		ObservableList<Language>list = FXCollections.observableArrayList();
-		list.setAll(Language.ENGLISH, Language.GERMAN);
+		list.setAll(Language.ENGLISH, Language.GERMAN, Language.SPANISH);
 		comboBox.setItems(list);
 	}
 

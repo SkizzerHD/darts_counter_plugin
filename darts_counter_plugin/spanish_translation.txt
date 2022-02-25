@@ -1,0 +1,40 @@
+
+MenuSceneController.menuHeader=ELEGIR MODO DE JUEGO
+
+X01SceneController.back=ESPALDA
+X01SceneController.X01header=ELEGIR PUNTOS
+
+X01PlayerSceneController.back=ESPALDA
+X01PlayerSceneController.playerHeader=ELEGIR JUGADOR
+
+X01OverviewSceneController.back=ESPALDA
+X01OverviewSceneController.overviewHeader=VISIÓN DE CONJUNTO
+X01OverviewSceneController.playerLabel=JUGADOR:
+X01OverviewSceneController.scoreLabel=PUNTAJE:
+
+X01GameSceneController.back=ESPALDA
+X01GameSceneController.playerLabel=Jugador
+X01GameSceneController.doubleButton=DOBLE
+X01GameSceneController.tripleButton=TRIPLE
+X01GameSceneController.next=PROX
+
+X01StatisticsSceneController.statsHeader=RESULTADO
+X01StatisticsSceneController.end=FINAL
+
+CricketPlayerSceneController.back=ESPALDA
+CricketPlayerSceneController.playerHeader=ELEGIR JUGADOR
+
+CricketOverviewSceneController.back=ESPALDA
+CricketOverviewSceneController.overviewHeader=VISIÓN DE CONJUNTO
+CricketOverviewSceneController.playerLabel=JUGADOR:
+
+CricketGameSceneController.back=ESPLADA
+CricketGameSceneController.playerLabel=Jugador
+CricketGameSceneController.next=PROX
+CricketGameSceneController.miss=PASADO
+CricketGameSceneController.doubleButton=DOBLE
+CricketGameSceneController.tripleButton=TRIPLE
+
+
+CricketGameObject.l1=Jugador
+CricketGameObject.l2=hat ganado
